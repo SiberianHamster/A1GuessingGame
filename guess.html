@@ -1,27 +1,45 @@
 <script>
-var userNumber,
-	userReply,
-	currentPlace;
+var userNumber;
+var	userReply;
+var currentPlace=5;
 var range_min=1;
 var range_max=10;
-var compGuess=5;
 var magicnumber=2;/* used to divide and narrow the range*/
 
 function narrow()	{ 
 	if (userReply == "Y"){
-		range_min=currentPlace; Math.floor(currentPlace = (range_max + range_min) / magicnumber);
+		range_min=currentPlace; currentPlace = (range_max + range_min) / magicnumber;
 		}
 	else {
-			range_max=currentPlace; Math.floor(currentPlace = (range_min + range_max) / magicnumber);
+		range_max=currentPlace; currentPlace = (range_min + range_max) / magicnumber;
 		}
 	};
 
+function list()	{
 
+}
 
 userNumber= prompt("Please enter a number between 1 and 10 and I will try to guess it.  Don't worry, I won't really peek, which means I won't cheat so please don't cheat: ");
+
+
+var i=1;
+while (i<10){
 userReply = prompt("Is the number bigger than " + currentPlace + " (Y/N)");
-narrow("userReply");
-console.log ("Your number is between " + range_min + " and " + range_max + ".");
+narrow("userReply")
+var k=1
+while (k<10)
+{console.log("These are the possible numbers:" + possibleNumber)}
+
+;i++;
+
+
+
+
+
+
+/*alert ("Your number is between " + range_min + " and " + range_max + ".");*/
+
+
 
 /*if (userReply="Y") {alert("Your number is a number between 5 and 10");
 	else {alert("Your number is a number between 1 and 6");}
