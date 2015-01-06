@@ -1,3 +1,11 @@
 For my first assignment I will create a guessing game variation.  Instead of me asking the computer the number, the computer will ask a series of yes or no question to quickly narrow down your number.
 
-Hopefully and improvement to avoid people choosing the furthest possible option from the question, the narrowing questions will be asked randomly
+I was able to get the program to narrow down to the whole number and discovered a bug where if i was to use 5 as the starting point, the game would not be able to identify 5.  To get around this, I used the starting point of 4.5.
+
+I'm not proud, but it does solve the issue for now.
+
+I would like to acknowledge Brook Rigio.  When i first created the narrow function, i kept rounding the numbers off.  After talking with Brook and staring at the white board...he said "why round it?"  Bam!  solved 90% of issues.
+
+I would like to also thank Scott for support after i couldn't figure a way to break out of the main loop.
+
+I want to thank the guy sitting kiddy corner to me...i forgot his name....After i suggested to him to comment out sections to test code for his program, he then told us that we can use chrome and inspect the code to see where problems existed.  I forgot about this and then Dexter reminded me again.  Was very helpful in finding syntax errors.
