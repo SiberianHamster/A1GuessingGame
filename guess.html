@@ -1,7 +1,7 @@
 <script>
 var userNumber; /*Storing user's number*/
 var	userReply;/*Storing Y or N for binumeral selection*/
-var currentPlace=5;/*initial is 5, but will be average of range*/
+var currentPlace=4.5;/*initial is 4.5, but will be average of range*/
 var range_min=0; /*current possible minimum*/
 var range_max=10; /*current possible maximum*/
 var magicnumber=2;/* used to divide and narrow the range*/
@@ -40,7 +40,7 @@ narrow("userReply");
 		}
 	};
 
-alert("Your numbers are between " + range_min + " and " + range_max);/*seeing how the majority of the function works, i was tired so this is where I stopped for now.*/
+alert("Your number is the whole number between " + range_min + " and " + range_max +". The number should be :" + (Math.floor(range_min)+1) + ".");
 
 
 </script>

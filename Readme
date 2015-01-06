@@ -1,3 +1,5 @@
 For my first assignment I will create a guessing game variation.  Instead of me asking the computer the number, the computer will ask a series of yes or no question to quickly narrow down your number.
 
-Hopefully and improvement to avoid people choosing the furthest possible option from the question, the narrowing questions will be asked randomly
+I was able to get the program to narrow down to the whole number and discovered a bug where if i was to use 5 as the starting point, the game would not be able to identify 5.  To get around this, I used the starting point of 4.5.
+
+I'm not proud, but it does solve the issue for now.
