@@ -7,9 +7,9 @@ var userNumber, /*Storing user's number*/
 	range_max=10; /*current possible maximum*/
 
 /* this function is called to narrow down the possibile ranges.  It uses the userReply answer to narrow down the choices*/
-function narrow()	{ 
+function narrow() { 
 	var magicnumber=2;/* used to divide and narrow the range*/
-	if (userReply == "Y"){
+	if (userReply == "Y") {
 		range_min=currentPlace; currentPlace = (range_max + range_min) / magicnumber;
 		}
 	else if (userReply == "N") {
@@ -21,7 +21,7 @@ function narrow()	{
 	};
 
 /* this function is called to count how many possible numbers fall within the set range.*/
-function legalNumbers()	{
+function legalNumbers() {
 	var counter=0; /*counter for numbers that fall in range*/
 	var checkednumber = range_min; /*checking number vs range*/
 	while (checkednumber < range_max) {
@@ -33,10 +33,10 @@ function legalNumbers()	{
 userNumber= prompt("Please enter a whole number between 0 and 10 and I will try to guess it.  Don't worry, I won't really peek, which means I won't cheat so please don't cheat: ");
 
 var i=1;
-while (i!=-1){ /*breaking out of this loop if legalNumbers returns 2*/
+while (i!=-1) { /*breaking out of this loop if legalNumbers returns 2*/
 userReply = prompt("Is the number bigger than " + currentPlace + " (Y/N)").toUpperCase();
 narrow(userReply);
-	if (legalNumbers (range_min, range_max)==2){
+	if (legalNumbers (range_min, range_max)==2) {
 		i=-1;
 		}
 	else {
